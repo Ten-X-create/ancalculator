@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+            border: 2px solid;
+            padding: 10px;
+            width: 280px;
+        }
+    </style>
+
+    <script>
+        // var x = document.getElementById("num1").value;
+        function square() {
+            var x = document.getElementById("num1").value;
+            //x = x * x;
+             document.getElementById("num1").value = x*x;
+            //console.log(x)
+        }
+
+        function cube() {
+            var x = document.getElementById("num1").value;
+            document.getElementById("num1").value = x*x*x;
+            //x = x * x * x;
+            //console.log(x)
+        }
+        function clr() {
+            var x = document.getElementById("num1").value;
+            document.getElementById("num1").value = ' ';
+            //document.querySelector('.fs').value = ' ';
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="post">
+        <input type="text" name="username" id="num1" class="fs" placeholder="Enter the value"  style="width: 100px; height: 40px;">
+        <Button type="button" onclick="square()" style="height: 30px;">square</Button>
+        <Button type="button" onclick="cube()" style="height: 30px;">cube</Button>
+        <Button type="button" onclick="clr()" style="height: 30px;">clear</Button>
+    </form>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
